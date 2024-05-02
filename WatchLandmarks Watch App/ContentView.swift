@@ -8,8 +8,7 @@
 import SwiftUI
 import UserNotifications
 
-struct ContentView: View {
-    
+struct ContentViewW: View {
     var body: some View {
         LandmarkList()
             .task {
@@ -17,11 +16,11 @@ struct ContentView: View {
                 _ = try? await center.requestAuthorization(
                     options: [.alert, .sound, .badge]
                 )
-        }
+            }
     }
 }
 
 #Preview {
-    ContentView()
+    ContentViewW()
         .environment(ModelData())
 }

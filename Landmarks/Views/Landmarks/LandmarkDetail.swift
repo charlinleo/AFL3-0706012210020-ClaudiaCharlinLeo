@@ -17,7 +17,7 @@ struct LandmarkDetail: View {
 
     var body: some View {
         @Bindable var modelData = modelData
-        
+
         ScrollView {
             MapView(coordinate: landmark.locationCoordinate)
                 .frame(height: 300)

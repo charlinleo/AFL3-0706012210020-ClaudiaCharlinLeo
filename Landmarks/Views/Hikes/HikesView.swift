@@ -26,7 +26,6 @@ struct HikesView: View {
                 HikeGraph(hike: hike, path: \.elevation)
                     .frame(width: 50, height: 30)
                 
-                
                 VStack(alignment: .leading) {
                     Text(hike.name)
                         .font(.headline)
